@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+h1 {
+    color: #2e8b57;
+}
+
+#game-container {
+    margin: 20px;
+}
+
+.stage {
+    border: 2px solid #4682b4;
+    background-color: #87ceeb;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+#food-container {
+    margin-top: 20px;
+}
+
+#food-item {
+    width: 100px;
+    cursor: grab;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4169e1;
+}

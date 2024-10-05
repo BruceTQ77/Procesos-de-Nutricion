@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Viaje Nutritivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>El Viaje Nutritivo</h1>
+        <p>¡Explora el sistema digestivo y aprende sobre la nutrición!</p>
+    </header>
+
+    <!-- Contenedor principal del juego -->
+    <main id="game-container">
+        <!-- Instrucciones -->
+        <section id="instructions">
+            <h2>Instrucciones</h2>
+            <p>Arrastra el alimento a las diferentes partes del sistema digestivo para completar su recorrido.</p>
+            <button id="start-game">Iniciar Juego</button>
+        </section>
+
+        <!-- Tablero de juego -->
+        <section id="game-board" style="display: none;">
+            <div id="digestive-path">
+                <!-- Aquí aparecerán las etapas del sistema digestivo -->
+                <div class="stage" id="mouth">Boca</div>
+                <div class="stage" id="stomach">Estómago</div>
+                <div class="stage" id="intestine">Intestino Delgado</div>
+                <div class="stage" id="blood">Torrente Sanguíneo</div>
+                <div class="stage" id="organs">Órganos</div>
+                <div class="stage" id="excretion">Excreción</div>
+            </div>
+
+            <!-- Área de arrastrar y soltar alimento -->
+            <div id="food-container">
+                <p>Arrastra el alimento:</p>
+                <img src="apple.png" id="food-item" alt="Alimento">
+            </div>
+        </section>
+
+        <!-- Resultado -->
+        <section id="result" style="display: none;">
+            <h2>¡Felicidades!</h2>
+            <p>Has completado el viaje del alimento a través del sistema digestivo.</p>
+            <button id="play-again">Jugar de nuevo</button>
+        </section>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
